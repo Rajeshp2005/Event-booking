@@ -1,5 +1,32 @@
-
-<h1>you are registered.thank you now you are the member</h1>
+<style>
+  body{
+    background: url(/img/t1.jpg)no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  h3{
+      color: yellow;
+      background: rgba(0, 0, 0, .3);
+      margin-top: 22%;
+      font-weight: 900;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+    button{
+             color: black;
+             background-color: white;
+             text-align: center;
+             align-items: center;
+             font-size: 1.5rem;
+    }
+    button:hover{
+             color: black;
+             background-color: aqua;
+             transition: all 0.5s ease-in-out;
+    }
+</style>
+<h3>you are registered.now you are the member....go back to the login page</h3>
+<a href="/admin,guest,member/front.php"><button>Back</button></a>
 <?php 
     if(isset($_POST['name']) ||isset($_POST['password']) ||isset($_POST['address']) ||isset($_POST['email']) ||isset($_POST['phone']) )
     {
@@ -43,10 +70,7 @@ $database = "registration";
       
 
         if($result){
-          echo '<div class="thankyou" role="alert">
-          <strong>Thank you!!!</strong> we will call you later to disscuss on this.
-         
-        </div>';
+          echo 'hi';
         }
         else{
             
@@ -60,5 +84,5 @@ $database = "registration";
       
     }
 ?>
-<a href="/admin,guest,member/front.php">back</a>
+
     

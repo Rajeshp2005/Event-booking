@@ -27,7 +27,7 @@
         <a href="#clients">clients</a>
         <a href="#team">team</a>
         <a href="#contact">Book Date</a>
-       
+        <a href="/admin,guest,member/front.php" style="text-decoration: underline; color:red;">Log Out</a></div>
             </nav>
             <form class="example" action="/php/index.php">
             <input type="text" placeholder="Search.." name="search">
@@ -42,7 +42,7 @@
          <h2>TASBIR</h2>
 
         <h3>We click for Memories!</h3>
-        <p>Contact us for photoshoot and videoshoot for party, event, portr</p>
+        <p>Contact us for photoshoot and videoshoot for party,events</p>
         <a href="https://www.facebook.com/weclickformemories"target="_blank" class="btn">more</a>
   
 </div>
@@ -232,7 +232,7 @@
 
 
 
-<div class="footer"> created by <span class="neonText">Tasbir</span> | all rights reserved! <span class="neonText">For others inquery call us at <a href=“tel:9841208969” style="color:white;">9841208969</a></span></div>
+<div class="footer"> created by <span class="neonText">Tasbir</span> | all rights reserved! <span class="neonText">For others inquery call us at <a href="tel:+9779841208969">9841208969</a></span></div>
 
 
 

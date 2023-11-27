@@ -21,8 +21,9 @@
         width: 25%;
         height: 80vh;
         margin: 0 auto;
-        background: url(/img/wed1.jpg) rgba(0, 0, 0, 0) no-repeat;
+        background: url(/img/login.jpeg) rgba(0, 0, 0, 0) no-repeat;
         background-blend-mode: darken;
+        background-size: cover;
         border-radius: 10%;
         padding: 30px;
         box-shadow: 12px 4px 17px 12px black;
@@ -34,7 +35,7 @@
       }
 
       .login-form h2 {
-        color: lightgoldenrodyellow;
+        color: black;
         text-align: center;
         margin-bottom: 110px;
         text-shadow: 4px 4px 8px black;
@@ -52,7 +53,7 @@
 
       .login-form input[type="submit"] {
         padding: 10px;
-        background-color: white;
+        background-color: aqua;
         color: black;
         border-radius: 20px;
         cursor: pointer;
@@ -68,7 +69,7 @@
         display: inline-block;
         margin-bottom: 10px;
         font-size: 1.3rem;
-        color: gold;
+        color: black;
         text-shadow: 4px 4px 8px black;
         font-weight: bold;
         text-align: center;
@@ -77,6 +78,7 @@
       .login-form input[type="submit"]:hover {
         background: black;
         color: white;
+        transition: all 0.4s ease-in;
         box-shadow: 2px 2px 3px yellow;
       }
     </style>

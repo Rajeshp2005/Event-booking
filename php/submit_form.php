@@ -1,6 +1,32 @@
+<style>
+  body{
+    background: url(/img/login.avif)no-repeat;
+    background-size: cover;
+    text-align: center;
 
+  }
+  .thankyou{
+    margin-top: 25%;
+    color:blue;
+    font-weight: 900;
+  }
+  .thankyou strong{
+  
+    color: green;
+  }
+  button{
+    background: black;
+    color: white;
+    font-size: 1.2rem;
+  }
+  button:hover{
+    background: aqua;
+    color: black;
+    transition: all 0.4s ease-in-out;
+  }
+</style>
 <?php
-    
+  
     if(isset($_POST['name']) ||isset($_POST['email']) ||isset($_POST['phone']) ||isset($_POST['address']) ||isset($_POST['Date']) ||isset($_POST['location']) ||isset($_POST['message'])  )
       {
       
@@ -32,8 +58,8 @@
  
         if($result){
           echo '<div class="thankyou" role="alert">
-          <strong>Thank you!!!</strong> we will call you later to disscuss on this.
-         
+          <strong>Thank you!!!</strong> we will call you later for further discussion.<br><br>
+         <a href="/php/index.php"><button>Back</button></a>
         </div>';
         }
         else{

@@ -27,6 +27,7 @@
         <a href="#clients">clients</a>
         <a href="#team">team</a>
         <a href="#contact">Book Date</a>
+        <a href="/admin,guest,member/front.php" style="text-decoration: underline; color:red;">Log Out</a></div>
        
             </nav>
             <form class="example" action="/php/index.php">
@@ -82,7 +83,7 @@
         </div>
 
         <div class="box">
-            <img src="/img/wed1.jpg" alt="">
+            <img src="/img/bdy.jpg" alt="">
             <div class="info">
                 <h3>Rice feeding || Birthday || Baby Shoot</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolores.</p>
@@ -109,7 +110,7 @@
         </div>
 
         <div class="box">
-            <img src="/img/wed2.avif" alt="">
+            <img src="/img/vdo.jpeg" alt="">
             <div class="info">
                 <h3>videography</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolores.</p>
@@ -129,7 +130,7 @@
         <h1>our previous clients</h1>
         <img src="/images/header-img.png" alt="" srcset="">
     </div>
-
+  
     <div class="row">
 
         <div class="box-container">
@@ -137,7 +138,7 @@
                 <img src="/img/sk.jpg" alt="">
                 <div class="info">
                     <h3>01.Sanjiv Weds Karuna </h3>
-                    <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo aut repudiandae nihil quidem perspiciatis natus placeat, inventore, vitae, quia totam ad dolores velit. Cumque, alias ullam. Nihil, aperiam hic! <i class="fas fa-quote-right"></i> </p>
+                    <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo aut repudiandae nihil quidem perspiciatis natus placeat, inventore, vitae, quia totam ad dolores velit. Cumque, alias ullam. Nihil, aperiam hic! <i class="fas fa-quote-right"></i> </p>  <br><br><br><br><br>
                 </div>
             </div>
             <div class="box">
@@ -159,7 +160,7 @@
                  
                 <p> <i class="fas fa-quote-left"></i>Walking with your hands in mine and mine in yours, that's exactly where I want to be always. <i class="fas fa-quote-right"></i> </p>
                 </div>
-                <img src="/img/sp.jpg" alt="">
+                <img src="/img/sp.jpg" alt=""><br><br><br><br><br>
             
                    </div>
        
@@ -256,7 +257,7 @@
 
 
 
-<div class="footer"> created by <span class="neonText">Tasbir</span> | all rights reserved! <span class="neonText">For others inquery call us at <a href="tel:+9779841208969">9841208969</a></span></div>
+<div class="footer"> created by <span class="neonText">Tasbir</span> | all rights reserved! <span class="neonText">For others inquery call us at <a href="tel:+9779841208969">9841208969</a></span>
 
 
 
