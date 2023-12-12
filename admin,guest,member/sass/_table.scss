@@ -1,0 +1,121 @@
+.main-container > .container-sm{
+    width:100%;
+
+    h5.heading{
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: $font_bold;
+        
+    }
+ 
+   table.order-history{
+    border: 1px solid #dee2e6;
+    td{
+        border: 1px solid #dee2e6;
+    }
+
+ 
+   }
+    table{
+        width:100%;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    
+
+        thead{
+            background-color:$clr_black;
+            color: $clr_white;
+
+            th{
+                @include capitalize;
+                padding:10px;
+               
+                
+            }
+           
+        }
+        tbody{
+            // border: 1px solid #dee2e6;
+            td{
+                
+                a.delete{
+                    text-decoration: none;
+                    background-color: $clr_red;
+                    color: $clr_white;
+                    padding: 0.8rem 1.5rem;
+                    font-weight: $font_medium;
+                }
+                input[type="number"]{
+                    
+                    width: 50px;  
+                    font-weight: $font_medium;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                }
+
+               
+               
+            }
+            td.total{
+                @include capitalize;
+                text-align: end;
+              }
+
+              td > form > button.btn-remove{
+                border: none;
+                text-transform: capitalize;
+                background-color: $clr_red;
+                color: $clr_white;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+                font-weight: $font_normal;
+                transition: 0.4s ease-in-out;
+                font-family: $poppins;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $clr_red_dark;
+                }
+              }
+
+              tr.checkout{
+                height: 100px;
+            }
+          td{
+            @include capitalize;
+            a{
+                text-decoration: none;
+                background-color: $clr_red;
+                color: $clr_white;
+                padding: 0.5rem 1.5rem;
+                font-weight: $font_medium;
+                transition: 0.4s ease-in-out;
+                
+                &:hover{
+                    cursor: pointer;
+                    background-color: $clr_green;
+                }
+            }
+          }
+        }
+
+        tfoot{
+            tr{
+                height: 100px;
+            }
+          td{
+            @include capitalize;
+            a{
+                text-decoration: none;
+                background-color: $clr_red;
+                color: $clr_white;
+                padding: 0.5rem 1.5rem;
+                font-weight: $font_medium;
+                
+            }
+          }
+        }
+        
+    }
+}

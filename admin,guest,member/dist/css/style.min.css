@@ -1,0 +1,356 @@
+header {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5%;
+   
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.container__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: -.2rem 0;
+    margin-left:40%;
+    margin-top: -25%;
+}
+
+.container__form h2 {
+    text-align: left;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.container__form h2::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    top: 38px;
+    left: 0;
+}
+
+.container__form input[type=email],
+.container__form input[type=password],
+.container__form input[type=text],
+.container__form input[type=number] {
+    height: 25px;
+    width: 200px;
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: .2rem;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none
+}
+
+
+
+.container__form span.remember {
+    font-size: 1rem;
+    margin-left: .5rem
+}
+
+.container__form div.formerror {
+    font-size: .8rem;
+    font-weight: 400;
+    color: gold;
+}
+
+.container__form input[type=submit] {
+    background-color: #d41b27;
+    color: #fff;
+    height: 35px;
+    width: 100px;
+    border-radius: .2rem;
+    border: none;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1rem;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.container__form input[type=submit]:hover {
+    background-color: #367817;
+    cursor: pointer
+}
+
+.container__form p {
+    text-align: left;
+    margin-top: 2rem;
+    font-size: .58rem;
+    font-weight: 900;
+    width: 100%;
+}
+
+.container__form p span a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: 900
+}
+
+.container__form p.admin {
+    margin-top: 1rem
+}
+
+.main-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif
+}
+
+
+
+.menu-list h2.title {
+    text-align: center
+}
+
+.box {
+    width: 100%;
+    padding: 1rem;
+    background-color: #367817;
+    color: #fff
+}
+
+.in_box {
+    width: 100%;
+    padding: 1rem;
+    background-color: #d41b27;
+    color: #fff
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px
+}
+
+.card-container .card {
+    width: 300px;
+    -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, .5);
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, .5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: none;
+    -ms-flex-pack: none;
+    justify-content: none;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.card-container .card img {
+    height: 250px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 16/9
+}
+
+.card-container .card_body {
+    padding: 1rem
+}
+
+.card-container .card_body .card_title {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 8px
+}
+
+.card-container .card_body .card_price {
+    font-weight: 700;
+    margin: 8px 0
+}
+
+.card-container .card_body .btn-cart {
+    border: none;
+    text-transform: capitalize;
+    background-color: #d41b27;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    font-family: "Poppins", sans-serif
+}
+
+.card-container .card_body .btn-cart:hover {
+    cursor: pointer;
+    background-color: #367817
+}
+
+.footer-container {
+    font-family: "Poppins", sans-serif;
+    background-color: #d41b27;
+    color: #fff;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    font-weight: 500
+}
+
+.main-container>.container-sm {
+    width: 100%
+}
+
+.main-container>.container-sm h5.heading {
+    font-size: 1.05rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.main-container>.container-sm table.order-history {
+    border: 1px solid #dee2e6;
+}
+
+.main-container>.container-sm table.order-history td {
+    border: 1px solid #dee2e6;
+}
+
+.main-container>.container-sm table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.main-container>.container-sm table thead {
+    background-color: #000;
+    color: #fff
+}
+
+.main-container>.container-sm table thead th {
+    text-transform: capitalize;
+    padding: 10px
+}
+
+.main-container>.container-sm table tbody td a.delete {
+    text-decoration: none;
+    background-color: #d41b27;
+    color: #fff;
+    padding: .8rem 1.5rem;
+    font-weight: 500
+}
+
+.main-container>.container-sm table tbody td input[type=number] {
+    width: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: .5rem
+}
+
+.main-container>.container-sm table tbody td.total {
+    text-transform: capitalize;
+    text-align: end
+}
+
+.main-container>.container-sm table tbody td>form>button.btn-remove {
+    border: none;
+    text-transform: capitalize;
+    background-color: #d41b27;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    font-family: "Poppins", sans-serif
+}
+
+.main-container>.container-sm table tbody td>form>button.btn-remove:hover {
+    cursor: pointer;
+    background-color: red
+}
+
+.main-container>.container-sm table tbody tr.checkout {
+    height: 100px
+}
+
+.main-container>.container-sm table tbody td {
+    text-transform: capitalize
+}
+
+.main-container>.container-sm table tbody td a {
+    text-decoration: none;
+    background-color: #d41b27;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    font-weight: 500;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out
+}
+
+.main-container>.container-sm table tbody td a:hover {
+    cursor: pointer;
+    background-color: #367817
+}
+
+.main-container>.container-sm table tfoot tr {
+    height: 100px
+}
+
+.main-container>.container-sm table tfoot td {
+    text-transform: capitalize
+}
+
+.main-container>.container-sm table tfoot td a {
+    text-decoration: none;
+    background-color: #d41b27;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    font-weight: 500
+}
+

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+/*login and register form css*/
+.login-container,.signup-container{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/*fonts*/
+
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*dashboard css*/
+
+.heading-color{
+    
+    /*background-color: #08746e; */
+    /* background-color: #00B76A; */
+    
+}
+.col-sm-2{
+    position: relative;
+ overflow: hidden;
+ min-height: 100vh;
+ z-index: 100; 
+ background-color: #0a8882;
+ /* background-color: #009C87; */
+  /* background-color: #59981A; */
+    /* background-image: linear-gradient(to bottom,rgb(48, 189, 48)25%,rgb(142, 70, 236)5%,rgb(95, 15, 195)100%); */
+}
+.col-sm-2> nav >ul{
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+
+}
+.col-sm-2> nav >ul >li{
+    padding:14px 0;
+    
+}
+
+.col-sm-2> nav >ul >li> a{
+ position: relative;
+    text-decoration: none;
+    color: gold;
+    font-size: 16px;
+    
+}
+.col-sm-2> nav >ul >li> a.active::after{
+    transform: scale(1);
+}
+
+.col-sm-2> nav >ul >li> a::after{
+    content: '';
+    position: absolute;
+    top:20px;
+    left:0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform-origin: left;
+    transform: scale(0);
+    transition: .5s;
+    
+}
+
+.col-sm-2> nav >ul >li> a:hover::after{
+    cursor: pointer;
+    transform: scale(1);
+    
+}
+
+.col-sm-10{
+    position:relative;
+}
+
+.buttons{
+background-color: #0a8882; 
+border: none;
+padding: 8px 16px;
+border-radius: 8px;
+font-weight: 500;
+color: white;
+transition: 1s;
+}
+
+.buttons:hover{
+    cursor: pointer;
+    background-color:#033f3c;
+}
+
+.form-links{
+    color: #033f3c;
+}
+
+/*modal css*/
+button.modal-btn{
+    width: 150px;
+    height: 45px;
+}

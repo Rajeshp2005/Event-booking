@@ -1,0 +1,148 @@
+.main-container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $poppins;
+   nav{
+     width: inherit;
+       @include css-flexbox(space-between,center);
+       height: 80px;
+       padding:1rem 0;
+
+        h2{
+            a{ 
+                @include a;
+                color: $clr_red;
+            }
+            
+        }
+
+       .cart a.cart-store{
+           text-decoration: none;
+        //   background-color: $clr_red;
+          color: $clr_black;
+        //   padding: 0.8rem 2rem;
+        margin-right: 2.5rem;
+          font-size: 1rem;
+          font-weight: $font_medium;
+       }
+
+       .cart a.orderhistory{
+        text-decoration: none;
+     //   background-color: $clr_red;
+       color: $clr_black;
+     //   padding: 0.8rem 2rem;
+     margin-right: 1.5rem;
+       font-size: 1rem;
+       font-weight: $font_medium;
+    }
+
+       .cart a.login{
+        text-decoration: none;
+          background-color: $clr_red;
+          color: $clr_white;
+          padding: 0.8rem 2rem;
+          font-size: 1rem;
+          font-weight: $font_medium;
+       }
+       
+       .cart{
+        
+           @include css-flexbox(center,center);
+          
+           .cart-img{
+            a{
+                position: relative;
+                text-decoration: none;
+                text-transform: capitalize;
+                margin-right: 2rem;
+                color: $clr_black;
+                font-weight: $font_medium;
+              
+            }
+              
+           }
+
+
+        }
+                      
+
+       }
+    }
+
+
+       .menu-list{
+           h2.title{
+               text-align: center;
+           }
+
+          
+        }
+        .box{
+            width:100%;
+            padding:1rem;
+            background-color: $clr_green;
+            color:$clr_white;
+           }
+
+           .in_box{
+            width:100%;
+            padding:1rem;
+            background-color: $clr_red;
+            color:$clr_white;
+           }
+
+        .card-container{
+            @include css-grid(1fr,'1fr 1fr 1fr');
+            gap: 30px;
+
+           .card{
+              @include card;
+              @include css-flexbox(none,flex-start);
+              flex-direction: column;
+
+              img{
+                //   @include image;
+                height:250px;
+                width:300px;
+                object-fit: cover;
+                  aspect-ratio: 16/9;
+              }
+
+              &_body{
+                  padding:1rem;
+                
+                  .card_title{
+                    text-transform: capitalize;
+                    font-weight: $font_medium;
+                    margin-bottom: 8px;
+                  }
+                .card_price{
+                    font-weight: $font_bold;
+                    margin: 8px 0;
+                 
+                }
+
+                .btn-cart{
+                    border: none;
+                    text-transform: capitalize;
+                    background-color: $clr_red;
+                    color: $clr_white;
+                    padding: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                    font-weight: $font_normal;
+                    transition: 0.4s ease-in-out;
+                    font-family: $poppins;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $clr_green;
+                    }
+                }
+
+
+              }
+              
+           }
+        }
+   

@@ -1,0 +1,62 @@
+@mixin css-grid($row,$column){
+    display: grid;
+    grid-template-columns: #{$column};
+    grid-template-rows: #{$row};
+}
+
+@mixin css-flexbox($justify,$align){
+    display: flex;
+    justify-content: #{$justify};
+    align-items: #{$align};
+}
+
+@mixin heightwidth{
+    height:80vh;
+    width: 100%;
+}
+
+@mixin image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin button{
+    
+    background-color: $clr_red;
+    color: $clr_white;
+    height: 35px;
+    width: 100px;
+    border-radius:$button-radius;
+    border:none;
+}
+
+@mixin a{
+text-decoration: none;
+
+}
+
+@mixin form-input-fields{
+    height: 25px;
+    width: 200px;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: $button-radius;
+}
+
+@mixin links{
+    text-decoration: none;
+}
+
+
+@mixin card{
+    // height: 450px;
+    width: 300px;
+    box-shadow: 5px 6px 20px rgba(0,0,0,.5);
+    
+}
+
+@mixin capitalize{
+    text-transform: capitalize;
+}

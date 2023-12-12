@@ -70,13 +70,15 @@ section{
   transition-timing-function: linear;
   transition-delay: 0.1s;
   font-size: 1.7rem;
-  padding:.9rem 2rem;
+  padding:1rem 2rem;
   cursor: pointer;
   background: silver;
 }
 
+
 .btn:hover{
-  background: cyan;
+  background: black;
+  color: white;
  transition: all 0.5s linear;
   
 }
@@ -106,61 +108,37 @@ header{
   align-items: center;
   justify-content: space-between;
   z-index: 1000000;
-}
-
-
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; 
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: green;
-}
-
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-header .navbar{
   justify-content: left;
-  text-align: left;
-  
+  text-align: right;
 }
+
+
 header .navbar a{
   color:black;
   font-size: 2rem;
   margin-left: 10px;
-
   padding: 2rem;
   
+
+}
+header .navbar a h5{
+  color:black;
+  font-size: 1.5rem;
+  margin-left: 195%;
+  padding: 15px 2px;
+margin-top: -5%;
+  
+}
+header .navbar a h5:hover{
+  color:aqua;
+  transition: all .6s linear;
   
 }
 
+
 header .navbar a:hover{
   color:white;
-  background-color:green;
+  color:green;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
@@ -222,113 +200,91 @@ header .navbar a:hover{
   height: 100vh;
 }
 
-.Services .box-container{
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px
+}
+
+.card-container .card {
+  width: 300px;
+  -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, .5);
+  box-shadow: 5px 6px 20px rgba(0, 0, 0, .5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: none;
+  -ms-flex-pack: none;
+  justify-content: none;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: white;
+}
 
+.card-container .card img {
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  -o-object-fit: cover;
+  object-fit: contain;
+  aspect-ratio: 18/9;
+  border-radius: 26px;
+}
+
+.card-container .card_body {
+  padding: 1rem
+}
+
+.card-container .card_body .card_title {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 8px
+}
+
+.card-container .card_body .card_price {
+  font-weight: 700;
+  margin: 8px 0
+}
+
+.Services .card-container button {
+  background-color: green;
+  border-radius: 16px;
+  height: 4vh;
+  width: 41%;
+}
+
+
+.Services .card-container button a{
+  text-decoration: none;
+  color: white;
+}
+.Services .card-container button a:hover{
+  background-color: orange;
+  color: white;
+}
+.Services .card-container button:hover{
+  background-color: orange;
   
 }
 
-.Services .box-container .box{
-  flex:1 1 30rem;
-  margin:1rem;
-  overflow: hidden;
-  position: relative;
-  border-radius: 2rem;
-  box-shadow:0 .5rem 1rem rgba(0,0,0,.9);
-  height: 25rem;
-  cursor: pointer;
-  
-  
-}
 
-.Services .box-container .box img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.55;
- 
-}
 
-.Services .box-container .box .info{
-  display: inline-flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top:0; left: 0;
-  height: 100%;
-  width: 100%;
-  background:rgba(0,0,0,.02);
-  text-align: center;
-  opacity: 1;
-}
-
-@keyframes head{
-  0%{
-      opacity: 0; 
-  }
-  15%{
-     opacity: 0;
-     transform: translate(-50% ,-50%);
-      
-  }
-  20%{
-     opacity: 0;
-     transform: translate(-300%,-300%);
-  }
-  50%{
-     opacity: 1;
-  }
   
-}
-.Services .box-container .box:hover .info{
+
+.Services .card-container :hover {
   transform: scale(1);
-  animation:head 0.2s  ease-in-out 1;
-  animation-play-state: running;
-  background:rgba(255,255,255,.7);
-  opacity: 1;
+  background: rgb(15, 141, 186);
+  color: black;
+  transition: all 0.2s linear;
  
  
-}
-.Services .box-container .box:hover .info p{
-  transform: scale(1);
-  opacity: 1;
-  
-}
-
-.Services .box-container .box .info .btn{
-  transform: scale(1);
-  opacity: 0;
- 
-}
-.Services .box-container .box:hover .info .btn{
-  transform: scale(1);
-  opacity: 1; animation:head 0.8s  ease-in-out 1;
-  animation-play-state: running;
- 
-}
-
-.Services .box-container .box:hover img{
-  transform: scale(1.3);
-  animation:head 0.8s  ease-in-out 1;
-  animation-play-state: running;
-  
-}
-
-.Services .box-container .box .info h3{
-  font-size: 2.7rem;
-  color:white;
-  font-weight: 900;
-}
-
-.Services .box-container .box .info p{
-  font-size: 1.7rem;
-  color:#333;
-  padding:1rem;
-  opacity: 0;
 }
 
 .clients .row{
@@ -565,6 +521,26 @@ header .navbar a:hover{
 .contact form .inputBox input:focus,
 .contact form textarea:focus{
   border-color: black;
+}
+select {
+  background:goldenrod;
+  border-radius: 15px;
+  width: 11.5rem;
+  height: 3rem;
+  font-size: large;
+}
+option{
+  font-size: 2rem;
+}
+
+option:nth-child(1){
+ background-color:silver;
+}
+option:nth-child(2){
+  background-color: #E8E8E8;
+}
+option:nth-child(3){
+  background-color: gold;
 }
 
 

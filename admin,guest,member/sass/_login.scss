@@ -1,0 +1,120 @@
+
+
+header{
+    @include heightwidth;
+    @include css-flexbox(center,center);
+    overflow: hidden;
+ }
+ 
+ .container{
+     @include css-grid(1fr,'1fr 1fr');
+     height: auto;
+     width: 700px;
+     background-color: $clr_black;
+     color:$clr_white;
+     font-family: $poppins;
+
+    //  .error{
+    //     background-color: $clr_red;
+    //     padding: 0 3rem;
+    //  }
+ 
+     img{
+      @include image;
+      overflow: hidden;
+     }
+ 
+     &__form{
+         @include css-flexbox(center,center);
+         flex-direction: column;
+         padding:1.2rem 0;
+     
+        
+ 
+         h2{
+             text-align: left;
+             position: relative;
+             margin-bottom: 2rem;
+         }
+         h2::after{
+             content: ' ';
+             position: absolute;
+             height: 2px;
+             width: 40px;
+             background-color: $clr_white;
+             top:38px;
+             left: 0;
+             
+         }
+ 
+         input[type="email"], input[type="password"],input[type="text"],input[type="number"]
+         {
+             @include form-input-fields;
+             font-family: $poppins;
+             outline: none;
+             border: none;
+            
+         }
+
+         input[type="checkbox"]{
+             accent-color: $clr_green;
+             height: 15px;
+             width: 15px;
+
+            
+            }
+
+            span.remember{
+                font-size: 1rem;
+                margin-left: 0.5rem;
+             }
+
+             div.formerror{
+                font-size: 0.8rem;
+                font-weight: $font_normal;
+                color: $clr_red;
+             }
+        
+         
+         input[type="submit"]{
+             @include button;  
+             font-size: 0.9rem;  
+             font-weight: $font_medium;
+             font-family: $poppins;
+             margin-top: 1rem; 
+             transition: 0.3s;
+             
+
+             &:hover{
+                 background-color:$clr_green;
+                 cursor: pointer;
+             }
+         }
+ 
+         p{
+             text-align: left;
+             margin-top: 2rem;
+             font-size: 0.8rem;
+             font-weight: 200;
+ 
+             span{
+                 a{
+                    @include links;
+                    color:$clr_red;
+                    font-weight: $font_medium;
+                 }
+
+                 
+                 
+             }
+         }
+
+         p.admin{
+            margin-top: 1rem;
+         }
+     
+     }
+ 
+    
+     
+ }
